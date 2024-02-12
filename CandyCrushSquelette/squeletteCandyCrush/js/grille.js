@@ -262,26 +262,19 @@ detecterEtSupprimerAlignements() {
   } 
 }
 
-// Dans votre classe Grille
-
 /**
  * Fait tomber les cookies lorsqu'il y a un espace vide en dessous d'eux.
  */
 // chuteCookies() {
 //   let cookiesEnMouvement = false;
-
-//   // Parcourez chaque colonne de la grille
 //   for (let colonne = 0; colonne < this.c; colonne++) {
 //       for (let ligne = this.l - 1; ligne >= 0; ligne--) {
-//           // Vérifiez s'il y a un cookie à cette position
 //           let cookie = this.tabcookies[ligne][colonne];
 //           if (cookie && !cookie.type) {
-//               // S'il y a un espace vide en dessous, faites tomber le cookie
 //               for (let k = ligne; k >= 0; k--) {
 //                   let cookieEnDessous = this.tabcookies[k][colonne];
 //                   let cookieActuel = this.tabcookies[k + 1][colonne];
 //                   if (cookieActuel && !cookieActuel.type && cookieEnDessous.type) {
-//                       // Échangez les cookies
 //                       [cookieActuel.type, cookieEnDessous.type] = [cookieEnDessous.type, cookieActuel.type];
 //                       cookiesEnMouvement = true;
 //                   }
